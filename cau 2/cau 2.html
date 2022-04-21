@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau 2</title>
+</head>
+<body>
+<script>
+    a = +prompt('nhap so thu nhat: ');
+    b = +prompt('nhap so thu hai: ');
+    if (a > 0 && b > 0) {
+        ketQua();
+    } else {
+        alert("nhap lai 2 so nguyen duong")
+    }
+
+    function timTongUoc(x) {
+        let sum = 0;
+        for (let i = 1; i < x; i++) {
+            if (x % i == 0) {
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
+
+    function ketQua() {
+        if (timTongUoc(a) == b && timTongUoc(b) == a) {
+            alert(true)
+        } else {
+            alert(false)
+        }
+    }
+
+</script>
+</body>
+</html>

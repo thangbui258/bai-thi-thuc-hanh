@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau 3</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Quan ly sach</h1>
+<div> //bang nhap vao san pham
+    <p>Mã sô đầu của sách <input type="text" id="maDau"></p>
+    <p>Mã số đuôi của sách <input type="text" id="maDuoi"></p>
+    <p>tên sách <input type="text" id="name"></p>
+    <p>Năm xuất bản <input type="text" id="year"></p>
+    <p>Số quyển <input type="text" id="quantity"></p>
+    <p>tình trạng <input type="text" id="status"></p>
+    <p><button onclick="add()">THÊM MỚI</button></p>
+</div>
+
+
+
+
+<div> //bang list san pham
+<table class="table-list-product">
+    <tr>
+        <th>Ma so sach</th>
+        <th>ten sach</th>
+        <th>nam xuat ban</th>
+        <th>so quyen</th>
+        <th>tinh trang</th>
+    </tr>
+    <tbody id="list-product">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+<script src="sach.js"></script>
+</body>
+</html>
